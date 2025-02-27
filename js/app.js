@@ -51,3 +51,20 @@ console.log(saoDiferentes)
 
 var saoDiferentes = v1 !== v2
 console.log(saoDiferentes)
+
+//  Funções  //
+function soma(n1, n2) {
+    console.log(n1 + n2)
+}
+soma(7, 4)
+
+function boasVindas(nome) {
+    alert('Seja bem vindo(a) ' + nome)
+}
+boasVindas('Adriano')
+
+function somaRetorna(n1, n2) {
+    return n1 + n2
+}
+var resultado = somaRetorna(80, 9)
+console.log(resultado)
