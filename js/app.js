@@ -85,3 +85,26 @@ function saque(valor) {
 
 saque(701)
 console.log(saldo)
+
+// Arrays // 
+var gaveteiro = ['meias', 'gravatas', 'documentos', 'camisetas']
+console.log(gaveteiro[2])
+
+var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+console.log(typeof personagens)
+
+personagens.push('C3PO', 'R2D2')
+console.log(personagens)
+
+personagens.pop()
+console.log(personagens)
+
+personagens = personagens.filter(function (p) {
+    return p !== 'Darth Vader'
+})
+console.log(personagens)
+
+personagens = personagens.filter(function (p) {
+    return p === 'Luke Skywalker'
+})
+console.log(personagens)
