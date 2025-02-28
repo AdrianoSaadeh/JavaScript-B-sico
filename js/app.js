@@ -108,3 +108,23 @@ personagens = personagens.filter(function (p) {
     return p === 'Luke Skywalker'
 })
 console.log(personagens)
+
+
+// Controles des Repetição (loops) // 
+var personas = ['Mestre YodaL', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader', 'Minha vó', 'Han Solo']
+console.log(personas.length)
+// personas.forEach((p) => {   // exemplo de foreach
+//     console.log(p)
+// })
+
+// for (var i in personas) {  // exemplo de forin
+//     console.log(personas[i])
+// }
+
+for (var index = 0; index <= personas.length - 1; index++) {
+    console.log(personas[index])
+}
+
+
+
+
