@@ -68,3 +68,20 @@ function somaRetorna(n1, n2) {
 }
 var resultado = somaRetorna(80, 9)
 console.log(resultado)
+
+// Controle de Fluxos // 
+
+var saldo = 1000
+
+function saque(valor) {
+    if (valor > saldo) {
+        console.log('Valor do saque superior ao saldo')
+    } else if (valor > 700) {
+        console.log('Valor do saque é maior do que o permitido por operação')
+    } else {
+        saldo = saldo - valor
+    }
+}
+
+saque(701)
+console.log(saldo)
