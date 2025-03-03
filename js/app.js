@@ -53,6 +53,13 @@ const App = new Vue({
         like(name) {
             alert(`O personagem ${name} recebeu 1 like!`)
         },
+        remove(id) {
+            const list = this.characters
+            const result = list.filter(item => {
+                return item.id !== id
+            })
+            this.characters = result
+        },
         search() {
 
             if (this.searchName === '') {
