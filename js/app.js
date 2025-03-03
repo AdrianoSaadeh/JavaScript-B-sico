@@ -46,11 +46,32 @@ const App = new Vue({
     data: {
         title: 'Star Wars Lego',
         userName: 'Aline Santos',
-        characters: LIST
+        characters: LIST,
+        searchName: ''
     },
     methods: {
         like(name) {
             alert(`O personagem ${name} recebeu 1 like!`)
+        },
+        search() {
+
+            if (this.searchName === '') {
+                return alert('Campo de busca está vazio. Informe um personagem')
+            }
+
+            const list = this.characters = LIST
+
+            const result = list.filter(item => {
+                return item.nome === this.searchName
+            })
+
+            if (result.length <= 0) {
+                alert('Nenhum registro encontrado!')
+            } else {
+                this.characters = result
+            }
+
+
         }
     }
 })
